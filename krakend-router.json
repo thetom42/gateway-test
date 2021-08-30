@@ -9,6 +9,10 @@
         "pattern": ".so"
     },
     "extra_config": {
+      "github_com/devopsfaith/krakend/transport/http/server/handler": {
+        "name": "krakend-payload",
+        "attachuserid": "rsc"
+      },
       "github_com/devopsfaith/krakend-gologging": {
         "level":  "DEBUG",
         "prefix": "[KRAKEND]",
@@ -41,13 +45,7 @@
                     "host": [
                         "http://172.18.0.1:2323"
                     ],
-                    "url_pattern": "/",
-                    "extra_config": {
-                        "github.com/devopsfaith/krakend/transport/http/client/executor": {
-                            "name": "krakend-payload-proxy",
-                            "attachuserid": "rsc"
-                        }
-                    }
+                    "url_pattern": "/"
                 }
             ]
         },
